@@ -54,5 +54,5 @@
 3. Run tests with coverage report: 
     
     ```shell script
-    pytest --cov=battle_knights --cov-report=term-missing
+    pytest --cov=battling_knights --cov-report=term-missing
     ```

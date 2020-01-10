@@ -29,7 +29,7 @@ class Battle(object):
     board = None
 
     def __init__(self):
-        """Setup knights and items on board."""
+        """Set up knights, items and board."""
         self.board = Board(8, 8)
         self.knights = {knight[0]: Knight(self.board, *knight[1:]) for knight in KNIGHTS}
         self.items = {item[0]: Item(self.board, *item[1:]) for item in ITEMS}

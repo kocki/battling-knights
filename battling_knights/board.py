@@ -80,7 +80,7 @@ class Board(object):
         return field
 
     def contains(self, position):
-        """Is position on board?"""
+        """Check is position on board."""
         return self.rows > position.row >= 0 and self.columns > position.column >= 0
 
     def get_item(self, position):

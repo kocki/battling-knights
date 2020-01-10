@@ -22,5 +22,5 @@ class Item(Military):
     def state(self):
         return [
             self.position.state(),
-            self.held
+            self.held,
         ]

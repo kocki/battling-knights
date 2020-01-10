@@ -24,6 +24,7 @@ GAME_END = 'GAME-END'
 
 
 def battle(file_name, animate=None, report=None):
+    """Run battle campaign regarding to directives from file."""
     if report is None:
         report = REPORT
     if animate is None:
@@ -46,7 +47,7 @@ def battle(file_name, animate=None, report=None):
                 in_game = True
 
             if animate:
-                print(25*'\n', campaign.board.draw())
+                print(25 * '\n', campaign.board.draw())
                 time.sleep(.2)
 
             line = f.readline().strip()

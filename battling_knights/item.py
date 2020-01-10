@@ -13,7 +13,7 @@ PRIORITIES = {
 
 class Item(Military):
     kind = 'item'
-    is_held = False
+    held = False
 
     @property
     def priority(self):
@@ -22,5 +22,5 @@ class Item(Military):
     def state(self):
         return [
             self.position.state(),
-            self.is_held
+            self.held
         ]

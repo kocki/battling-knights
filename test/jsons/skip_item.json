@@ -1,36 +1,42 @@
 {
   "red": [
     [
-      4,
-      6
+      0,
+      0
     ],
     "LIVE",
-    "axe",
-    3,
+    null,
+    1,
     1
   ],
   "blue": [
+    [
+      7,
+      0
+    ],
+    "LIVE",
     null,
-    "DEAD",
-    null,
-    0,
-    0
+    1,
+    1
   ],
   "green": [
-    null,
-    "DEAD",
-    null,
-    0,
-    0
-  ],
-  "yellow": [
     [
-      0,
+      7,
       7
     ],
     "LIVE",
     null,
     1,
+    1
+  ],
+  "yellow": [
+    [
+      2,
+      0
+    ],
+    "LIVE",
+    "dagger",
+    2,
     1
   ],
   "magic_staff": [
@@ -42,7 +48,7 @@
   ],
   "helmet": [
     [
-      4,
+      5,
       5
     ],
     false
@@ -50,15 +56,15 @@
   "dagger": [
     [
       2,
-      5
+      0
     ],
-    false
+    true
   ],
   "axe": [
     [
-      4,
-      6
+      2,
+      2
     ],
-    true
+    false
   ]
 }

@@ -31,6 +31,8 @@ class Knight(Military):
                     self.item.position = copy.deepcopy(self.position)
                 else:
                     self.item = self.board.get_item(self.position)
+                    if self.item:
+                        self.item.held = True
 
     @property
     def status(self):
@@ -90,16 +92,18 @@ class Knight(Military):
 
         return None
 
-    def kill(self):
+    def release_item(self):
         if self.item:
             self.board.add(self.item)
+            self.item.held = False
             self.item = None
+
+    def kill(self):
+        self.release_item()
         self._status = STATUS_DEAD
 
     def drown(self):
-        if self.item:
-            self.board.add(self.item)
-            self.item = None
+        self.release_item()
         self._status = STATUS_DROWNED
 
     def state(self):

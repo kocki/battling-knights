@@ -12,6 +12,7 @@ from battle import battle
     'attack_with_item_1',
     'attack_with_item_2',
     'many_items',
+    'skip_item',
 ])
 def test_json(file_name):
     """Base example from challenge."""

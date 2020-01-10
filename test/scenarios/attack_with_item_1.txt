@@ -1,0 +1,14 @@
+GAME-START
+G:N
+G:N
+G:W
+G:W
+B:E
+B:E
+B:E
+B:E
+B:E
+B:N
+B:N
+G:N
+GAME-END

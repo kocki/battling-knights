@@ -11,6 +11,8 @@ I think, that would be easy to develop another features with my base, eg: swap
 item if knight meet better one, maybe raise knight power according to win attack
 or defence and so on.
 
+I had a fun with that task :)
+
 ## Requires
     
 * Python (3.7 testd)

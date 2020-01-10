@@ -13,6 +13,7 @@ from battle import battle
     'attack_with_item_2',
     'many_items',
     'skip_item',
+    'pickup_item_before_fight',
 ])
 def test_json(file_name):
     """Base example from challenge."""

@@ -46,6 +46,10 @@ class Knight(Military):
         return self.status == STATUS_LIVE
 
     @property
+    def is_dead(self):
+        return self.status == STATUS_DEAD
+
+    @property
     def attack(self):
         if self.is_live:
             return self.power.attack + self.item_attack + self.surprise_attack
@@ -87,7 +91,7 @@ class Knight(Military):
         return None
 
     def get_position(self):
-        if self.is_live:
+        if self.is_live or self.is_dead:
             return self.position.state()
 
         return None
